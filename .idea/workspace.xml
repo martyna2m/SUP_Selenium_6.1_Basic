@@ -5,12 +5,57 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a48464fd-f51d-44cb-843e-920c24c18c37" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/base/TestBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/basic/AlertsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/basic/FormMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/basic/FormTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/basic/IframesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/basic/TableTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/basic/WindowsAndTabsMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/basic/WindowsAndTabsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/interactions/DraggableTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/interactions/DroppableTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/interactions/ResizableTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/interactions/SelectableTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/interactions/SortableTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/other/DemoQaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/other/HighSiteMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/other/HighSiteTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/widgets/AccordionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/widgets/AutocompleteTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/widgets/DatapickerMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/widgets/DatepickerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/widgets/MenuTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/widgets/ModalDialogMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/widgets/ModalDialogTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/widgets/ProgressbarTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/widgets/SelectableTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/widgets/SliderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/widgets/TooltipTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/formData.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/sampleFile.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/screenshot.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -28,9 +73,102 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "run.code.analysis.last.selected.profile": "pProject Default"
   }
 }]]></component>
+  <component name="RunManager" selected="JUnit.DemoQaTest.chooseSubmitOptions">
+    <configuration name="DatepickerTest.pickDateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SUP_Selenium_6.1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="widgets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="widgets" />
+      <option name="MAIN_CLASS_NAME" value="widgets.DatepickerTest" />
+      <option name="METHOD_NAME" value="pickDateTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoQaTest.chooseSubmitOptions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SUP_Selenium_6.1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="other.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="other" />
+      <option name="MAIN_CLASS_NAME" value="other.DemoQaTest" />
+      <option name="METHOD_NAME" value="chooseSubmitOptions" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DroppableTest.moveAndDrop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SUP_Selenium_6.1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="interactions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="interactions" />
+      <option name="MAIN_CLASS_NAME" value="interactions.DroppableTest" />
+      <option name="METHOD_NAME" value="moveAndDrop" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HighSiteTest.takeScreenShotWhenSubmitButtonIsVisibleUsingJS" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SUP_Selenium_6.1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="other.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="other" />
+      <option name="MAIN_CLASS_NAME" value="other.HighSiteTest" />
+      <option name="METHOD_NAME" value="takeScreenShotWhenSubmitButtonIsVisibleUsingJS" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HighSiteTest.takeScreenShotWhenSubmitButtonIsVisibleUsingScroll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SUP_Selenium_6.1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="other.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="other" />
+      <option name="MAIN_CLASS_NAME" value="other.HighSiteTest" />
+      <option name="METHOD_NAME" value="takeScreenShotWhenSubmitButtonIsVisibleUsingScroll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DemoQaTest.chooseSubmitOptions" />
+        <item itemvalue="JUnit.DatepickerTest.pickDateTest" />
+        <item itemvalue="JUnit.HighSiteTest.takeScreenShotWhenSubmitButtonIsVisibleUsingJS" />
+        <item itemvalue="JUnit.HighSiteTest.takeScreenShotWhenSubmitButtonIsVisibleUsingScroll" />
+        <item itemvalue="JUnit.DroppableTest.moveAndDrop" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -41,5 +179,16 @@
       <updated>1699371404133</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/base/TestBase.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="117" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

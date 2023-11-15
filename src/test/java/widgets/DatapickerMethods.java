@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.List;
 
-public class DatapickerTestBase {
+public class DatapickerMethods {
 
 
     void selectPickedDateInCalendar(WebDriver driver, String dateToPick) {

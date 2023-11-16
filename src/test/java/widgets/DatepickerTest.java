@@ -9,19 +9,19 @@ public class DatepickerTest extends TestBase {
     @Tag("widgets")
     void pickDateTest() {
 
-        DatapickerMethods datapickerMethods = new DatapickerMethods();
+        DatapickerMethods datapickerMethods = new DatapickerMethods(driver);
 
         openWebsite("http://www.seleniumui.moderntester.pl/datepicker.php");
 
 
-        datapickerMethods.selectPickedDateInCalendar(driver, "10/18/2020");
-        datapickerMethods.assertPickedDate(driver, "10/18/2020");
+        datapickerMethods.selectPickedDateInCalendar("10/18/2020");
+        datapickerMethods.assertPickedDate("10/18/2020");
 
-        datapickerMethods.selectPickedDateInCalendar(driver, "1/17/2022");
-        datapickerMethods.assertPickedDate(driver, "1/17/2022");
+        datapickerMethods.selectPickedDateInCalendar( "1/17/2022");
+        datapickerMethods.assertPickedDate( "1/17/2022");
 
-        datapickerMethods.selectPickedDateInCalendar(driver, "5/30/2024");
-        datapickerMethods.assertPickedDate(driver, "5/30/2024");
+        datapickerMethods.selectPickedDateInCalendar( "5/30/2024");
+        datapickerMethods.assertPickedDate( "5/30/2024");
 
     }
 

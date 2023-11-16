@@ -4,46 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a48464fd-f51d-44cb-843e-920c24c18c37" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/TestBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/basic/AlertsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/basic/FormMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/basic/FormTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/basic/IframesTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/basic/TableTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/basic/WindowsAndTabsMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/basic/WindowsAndTabsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/interactions/DraggableTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/interactions/DroppableTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/interactions/ResizableTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/interactions/SelectableTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/interactions/SortableTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/other/DemoQaTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/other/HighSiteMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/other/HighSiteTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/widgets/AccordionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/widgets/AutocompleteTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/widgets/DatapickerMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/widgets/DatepickerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/widgets/MenuTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/widgets/ModalDialogMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/widgets/ModalDialogTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/widgets/ProgressbarTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/widgets/SelectableTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/widgets/SliderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/widgets/TooltipTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/formData.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/sampleFile.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/screenshot.png" afterDir="false" />
+    <list default="true" id="a48464fd-f51d-44cb-843e-920c24c18c37" name="Changes" comment="Create Code">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/basic/FormMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/basic/FormMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/basic/FormTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/basic/FormTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/basic/WindowsAndTabsMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/basic/WindowsAndTabsMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/basic/WindowsAndTabsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/basic/WindowsAndTabsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/other/HighSiteMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/other/HighSiteMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/other/HighSiteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/other/HighSiteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/widgets/DatapickerMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/widgets/DatapickerMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/widgets/DatepickerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/widgets/DatepickerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/widgets/ModalDialogMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/widgets/ModalDialogMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/widgets/ModalDialogTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/widgets/ModalDialogTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/screenshot.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +32,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 5
@@ -78,7 +52,7 @@
     "run.code.analysis.last.selected.profile": "pProject Default"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.DemoQaTest.chooseSubmitOptions">
+  <component name="RunManager" selected="JUnit.ModalDialogTest.createNewUser">
     <configuration name="DatepickerTest.pickDateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SUP_Selenium_6.1" />
       <extension name="coverage">
@@ -90,38 +64,6 @@
       <option name="PACKAGE_NAME" value="widgets" />
       <option name="MAIN_CLASS_NAME" value="widgets.DatepickerTest" />
       <option name="METHOD_NAME" value="pickDateTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DemoQaTest.chooseSubmitOptions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SUP_Selenium_6.1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="other.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="other" />
-      <option name="MAIN_CLASS_NAME" value="other.DemoQaTest" />
-      <option name="METHOD_NAME" value="chooseSubmitOptions" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DroppableTest.moveAndDrop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SUP_Selenium_6.1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="interactions.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="interactions" />
-      <option name="MAIN_CLASS_NAME" value="interactions.DroppableTest" />
-      <option name="METHOD_NAME" value="moveAndDrop" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -159,13 +101,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ModalDialogTest.createNewUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SUP_Selenium_6.1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="widgets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="widgets" />
+      <option name="MAIN_CLASS_NAME" value="widgets.ModalDialogTest" />
+      <option name="METHOD_NAME" value="createNewUser(java.lang.String,java.lang.String,java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WindowsAndTabsTest.switchBetweenWindows" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SUP_Selenium_6.1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="basic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="basic" />
+      <option name="MAIN_CLASS_NAME" value="basic.WindowsAndTabsTest" />
+      <option name="METHOD_NAME" value="switchBetweenWindows" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DemoQaTest.chooseSubmitOptions" />
+        <item itemvalue="JUnit.ModalDialogTest.createNewUser" />
         <item itemvalue="JUnit.DatepickerTest.pickDateTest" />
         <item itemvalue="JUnit.HighSiteTest.takeScreenShotWhenSubmitButtonIsVisibleUsingJS" />
         <item itemvalue="JUnit.HighSiteTest.takeScreenShotWhenSubmitButtonIsVisibleUsingScroll" />
-        <item itemvalue="JUnit.DroppableTest.moveAndDrop" />
+        <item itemvalue="JUnit.WindowsAndTabsTest.switchBetweenWindows" />
       </list>
     </recent_temporary>
   </component>
@@ -178,7 +152,20 @@
       <option name="presentableId" value="Default" />
       <updated>1699371404133</updated>
     </task>
+    <task id="LOCAL-00001" summary="Create Code">
+      <option name="closed" value="true" />
+      <created>1700053111075</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700053111075</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Create Code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create Code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

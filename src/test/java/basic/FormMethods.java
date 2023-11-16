@@ -11,72 +11,78 @@ import java.util.List;
 
 public class FormMethods {
 
+    WebDriver driver;
+
+    public FormMethods(WebDriver driver) {
+        this.driver = driver;
+    }
+
     File sampleFile = new File("src/test/resources/sampleFile.docx");
 
-    void fillTheForm(WebDriver driver, String firstName, String lastName, String email, String age) {
-        putFirstName(driver, firstName);
-        putLastName(driver, lastName);
-        putEmail(driver, email);
-        chooseGenderOption(driver, 0);
-        putAge(driver, age);
-        chooseExperienceOption(driver, 0);
-        chooseProfessionOption(driver, 0);
-        selectContinent(driver, "europe");
-        selectCommandOption(driver,1);
-        sendFile(driver);
-        clickSignInButton(driver);
+    void fillTheForm(String firstName, String lastName, String email, String age) {
+        putFirstName(firstName);
+        putLastName(lastName);
+        putEmail(email);
+        chooseGenderOption(0);
+        putAge(age);
+        chooseExperienceOption( 0);
+        chooseProfessionOption( 0);
+        selectContinent("europe");
+        selectCommandOption(1);
+        sendFile();
+        clickSignInButton();
 
         WebElement successAlert = driver.findElement(By.cssSelector("#validator-message"));
         Assertions.assertThat(successAlert.isDisplayed()).isTrue();
 
     }
 
-    private void putFirstName(WebDriver driver, String firstName) {
+    private void putFirstName(String firstName) {
         driver.findElement(By.cssSelector("#inputFirstName3")).sendKeys(firstName);
     }
 
-    private void putLastName(WebDriver driver, String lastName) {
+    private void putLastName( String lastName) {
         driver.findElement(By.cssSelector("#inputLastName3")).sendKeys(lastName);
     }
 
-    private void putEmail(WebDriver driver, String email) {
+    private void putEmail( String email) {
         driver.findElement(By.cssSelector("#inputEmail3")).sendKeys(email);
     }
 
-    private void putAge(WebDriver driver, String age) {
+    private void putAge(String age) {
         driver.findElement(By.cssSelector("#inputAge3")).clear();
         driver.findElement(By.cssSelector("#inputAge3")).sendKeys(age);
     }
 
-    private void chooseGenderOption(WebDriver driver, int optionIndex) {
+    private void chooseGenderOption(int optionIndex) {
         List<WebElement> sexCheckBoxes = driver.findElements(By.cssSelector("[name='gridRadiosSex']"));
         sexCheckBoxes.get(optionIndex).click();
     }
 
-    private void chooseExperienceOption(WebDriver driver, int optionIndex) {
+    private void chooseExperienceOption(int optionIndex) {
         List<WebElement> experienceCheckBoxes = driver.findElements(By.cssSelector("[name='gridRadiosExperience']"));
         experienceCheckBoxes.get(optionIndex).click();
     }
 
-    private void chooseProfessionOption(WebDriver driver, int optionIndex) {
+    private void chooseProfessionOption(int optionIndex) {
         List<WebElement> professionCheckBoxes = driver.findElements(By.cssSelector("[name='gridCheckboxProfession']"));
         professionCheckBoxes.get(optionIndex).click();
     }
 
-    private void clickSignInButton(WebDriver driver) {
+    private void clickSignInButton() {
         driver.findElement(By.xpath("//*[text()='Sign in']")).click();
     }
 
-    private void sendFile(WebDriver driver) {
+    private void sendFile() {
         driver.findElement(By.cssSelector("#chooseFile")).sendKeys(sampleFile.getAbsolutePath());
     }
 
-    private void selectContinent(WebDriver driver, String continentValue) {
+    private void selectContinent( String continentValue) {
         Select continents = new Select(driver.findElement(By.cssSelector("#selectContinents")));
         continents.selectByValue(continentValue);
     }
 
-    private void selectCommandOption(WebDriver driver, int optionIndex) {
+    private void selectCommandOption( int optionIndex) {
         Select commands = new Select(driver.findElement(By.cssSelector("#selectSeleniumCommands")));
         commands.selectByIndex(optionIndex);
     }

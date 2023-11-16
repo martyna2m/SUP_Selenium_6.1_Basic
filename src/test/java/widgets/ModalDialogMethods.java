@@ -1,6 +1,5 @@
 package widgets;
 
-import base.TestBase;
 import org.assertj.core.api.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -10,31 +9,37 @@ import java.util.List;
 
 public class ModalDialogMethods {
 
-    List<WebElement> findUsersList(WebDriver driver) {
+    WebDriver driver;
+
+    public ModalDialogMethods(WebDriver driver) {
+        this.driver = driver;
+    }
+
+    List<WebElement> findUsersList() {
         return driver.findElements(By.cssSelector("tbody tr"));
     }
 
-    void clickCreateUserButton(WebDriver driver) {
+    void clickCreateUserButton() {
         driver.findElement(By.cssSelector("#create-user")).click();
     }
 
-    void clickCreateAccountButton(WebDriver driver) {
+    void clickCreateAccountButton() {
         driver.findElement(By.xpath("//button[text()='Create an account']")).click();
     }
 
-    void clearAndSendKeysToNameInput(WebDriver driver, String value) {
+    void clearAndSendKeysToNameInput(String value) {
         WebElement nameInput = driver.findElement(By.cssSelector("#name"));
         nameInput.clear();
         nameInput.sendKeys(value);
     }
 
-    void clearAndSendKeysToEmailInput(WebDriver driver, String value) {
+    void clearAndSendKeysToEmailInput(String value) {
         WebElement nameInput = driver.findElement(By.cssSelector("#email"));
         nameInput.clear();
         nameInput.sendKeys(value);
     }
 
-    void clearAndSendKeysToPasswordInput(WebDriver driver, String value) {
+    void clearAndSendKeysToPasswordInput(String value) {
         WebElement nameInput = driver.findElement(By.cssSelector("#password"));
         nameInput.clear();
         nameInput.sendKeys(value);
@@ -54,7 +59,7 @@ public class ModalDialogMethods {
         Assertions.assertThat(addedPassword).isEqualTo(password);
     }
 
-    void assertThatNewElementIsAddedToList(int newNumberOfUsers, int initialNumberOfUsers){
+    void assertThatNewElementIsAddedToList(int newNumberOfUsers, int initialNumberOfUsers) {
         Assertions.assertThat(newNumberOfUsers == initialNumberOfUsers + 1).isTrue();
     }
 }

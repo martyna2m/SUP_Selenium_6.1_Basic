@@ -7,8 +7,13 @@ import java.util.Set;
 public class WindowsAndTabsMethods {
 
     String mainWindowHandle;
+    WebDriver driver;
 
-    void switchToNewWindow(WebDriver driver) {
+    public WindowsAndTabsMethods(WebDriver driver) {
+        this.driver = driver;
+    }
+
+    void switchToNewWindow() {
         Set<String> windowHandles = driver.getWindowHandles();
         for (String windowHandle : windowHandles) {
             driver.switchTo().window(windowHandle);
@@ -16,16 +21,16 @@ public class WindowsAndTabsMethods {
     }
 
 
-    void switchToMainWindow(WebDriver driver, String mainWindowHandle) {
+    void switchToMainWindow(String mainWindowHandle) {
         driver.switchTo().window(mainWindowHandle);
     }
 
-    void closeNewWindowAndSwitchBackToMain(WebDriver driver, String mainWindowHandle) {
+    void closeNewWindowAndSwitchBackToMain(String mainWindowHandle) {
         driver.close();
-        switchToMainWindow(driver, mainWindowHandle);
+        switchToMainWindow(mainWindowHandle);
     }
 
-    void executeStepsFromTablesExercise(WebDriver driver) {
+    void executeStepsFromTablesExercise() {
         TableTest tableTest = new TableTest();
         System.out.println(tableTest.iterateOnRows(driver, "Switzerland", 4000));
     }

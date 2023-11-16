@@ -12,25 +12,30 @@ import java.nio.file.StandardCopyOption;
 
 public class HighSiteMethods extends TestBase {
 
+    WebDriver driver;
 
-    void scrollUntilButtonVisibleActions(WebDriver driver) {
+    public HighSiteMethods(WebDriver driver) {
+        this.driver = driver;
+    }
+
+    void scrollUntilButtonVisibleActions() {
         Actions actions = new Actions(driver);
 
-        while (isSubmitButtonDisplayed(driver)) {
+        while (isSubmitButtonDisplayed()) {
             actions.scrollByAmount(0, 100).build().perform();
         }
     }
 
-    void scrollUntilButtonVisibleJS(WebDriver driver) {
+    void scrollUntilButtonVisibleJS() {
         JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 
-        while (isSubmitButtonDisplayed(driver)) {
+        while (isSubmitButtonDisplayed()) {
             jsExecutor.executeScript("window.scrollBy(0,100);");
         }
 
     }
 
-    boolean isSubmitButtonDisplayed(WebDriver driver) {
+    boolean isSubmitButtonDisplayed() {
         try {
             WebElement submitButton = driver.findElement(By.cssSelector("#scroll-button"));
             return !submitButton.isDisplayed();
@@ -39,7 +44,7 @@ public class HighSiteMethods extends TestBase {
         }
     }
 
-    void takeScreenShot(WebDriver driver) {
+    void takeScreenShot() {
         try {
             File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             Path fileLocalization = Path.of("src/test/resources/screenshot.png");

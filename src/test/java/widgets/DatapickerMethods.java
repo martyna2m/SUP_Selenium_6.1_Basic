@@ -1,5 +1,6 @@
 package widgets;
 
+import com.sun.jna.WString;
 import org.assertj.core.api.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -12,22 +13,27 @@ import java.util.List;
 
 public class DatapickerMethods {
 
+    WebDriver driver;
 
-    void selectPickedDateInCalendar(WebDriver driver, String dateToPick) {
-        openCalendar(driver);
-        navigateToYear(driver, dateToPick);
-        navigateToMonth(driver, dateToPick);
-        chooseDayInCalendar(driver, dateToPick);
+    public DatapickerMethods(WebDriver driver) {
+        this.driver = driver;
+    }
+
+    void selectPickedDateInCalendar(String dateToPick) {
+        openCalendar();
+        navigateToYear(dateToPick);
+        navigateToMonth(dateToPick);
+        chooseDayInCalendar(dateToPick);
     }
 
 
-    private void openCalendar(WebDriver driver) {
+    private void openCalendar() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         WebElement dateInput = wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.cssSelector("#datepicker"))));
         dateInput.click();
     }
 
-    private void navigateToYear(WebDriver driver, String dateToPick) {
+    private void navigateToYear(String dateToPick) {
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 
@@ -48,7 +54,7 @@ public class DatapickerMethods {
     }
 
 
-    private void navigateToMonth(WebDriver driver, String dateToPick) {
+    private void navigateToMonth(String dateToPick) {
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 
@@ -84,7 +90,7 @@ public class DatapickerMethods {
     }
 
 
-    private void chooseDayInCalendar(WebDriver driver, String dateToPick) {
+    private void chooseDayInCalendar(String dateToPick) {
 
         int monthToPick = extractMonthToPick(dateToPick);
         String dayToPick = String.valueOf(extractDayToPick(dateToPick));
@@ -103,7 +109,7 @@ public class DatapickerMethods {
 
     }
 
-    void assertPickedDate(WebDriver driver, String pickedDate) {
+    void assertPickedDate(String pickedDate) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         WebElement dateInput = wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.cssSelector("#datepicker"))));
 

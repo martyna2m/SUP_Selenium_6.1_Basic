@@ -1,6 +1,5 @@
 package widgets;
 
-import com.sun.jna.WString;
 import org.assertj.core.api.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

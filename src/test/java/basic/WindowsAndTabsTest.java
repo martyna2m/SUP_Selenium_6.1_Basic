@@ -3,10 +3,7 @@ package basic;
 import base.TestBase;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
-
-import java.util.Set;
 
 public class WindowsAndTabsTest extends TestBase {
     @RepeatedTest(3)

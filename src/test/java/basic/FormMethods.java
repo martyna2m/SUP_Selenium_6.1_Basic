@@ -25,8 +25,8 @@ public class FormMethods {
         putEmail(email);
         chooseGenderOption(0);
         putAge(age);
-        chooseExperienceOption( 0);
-        chooseProfessionOption( 0);
+        chooseExperienceOption(0);
+        chooseProfessionOption(0);
         selectContinent("europe");
         selectCommandOption(1);
         sendFile();
@@ -41,11 +41,11 @@ public class FormMethods {
         driver.findElement(By.cssSelector("#inputFirstName3")).sendKeys(firstName);
     }
 
-    private void putLastName( String lastName) {
+    private void putLastName(String lastName) {
         driver.findElement(By.cssSelector("#inputLastName3")).sendKeys(lastName);
     }
 
-    private void putEmail( String email) {
+    private void putEmail(String email) {
         driver.findElement(By.cssSelector("#inputEmail3")).sendKeys(email);
     }
 
@@ -77,12 +77,12 @@ public class FormMethods {
         driver.findElement(By.cssSelector("#chooseFile")).sendKeys(sampleFile.getAbsolutePath());
     }
 
-    private void selectContinent( String continentValue) {
+    private void selectContinent(String continentValue) {
         Select continents = new Select(driver.findElement(By.cssSelector("#selectContinents")));
         continents.selectByValue(continentValue);
     }
 
-    private void selectCommandOption( int optionIndex) {
+    private void selectCommandOption(int optionIndex) {
         Select commands = new Select(driver.findElement(By.cssSelector("#selectSeleniumCommands")));
         commands.selectByIndex(optionIndex);
     }
